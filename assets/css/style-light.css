@@ -1,0 +1,279 @@
+
+
+/*--------------------------------------------------------------
+# Color veriables
+--------------------------------------------------------------*/
+[data-theme="light"] {
+  --primary-color: #ffffff;
+  --secondary-color: #2767a4;
+  --tertiary-color: #172236;
+  --quaternary-color: #170a24;
+  --primary-gray: #4f4f4f;
+  --secondary-gray: #c1c1c1;
+  --tertiary-gray: #f4f5f8;
+  --text-primary-color: #170a24;
+  --text-secondary-color: #ffffff;
+
+}
+
+[data-theme="light"] {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: var(--text-primary-color);
+}
+
+.primary-custom-button:hover {
+  background-color: var(--primary-color);
+}
+
+.red-border-text {
+  color: var(--tertiary-color);
+  text-shadow: 1px 2px #ffffff, -1px 4px #172236;
+}
+
+.red-text {
+  color: var(--tertiary-color);
+  text-shadow: 1px 2px #ffffff, -1px 4px #172236;
+}
+
+.primary-custom-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+}
+
+.primary-custom-button:hover span svg path {
+  fill: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Header 
+--------------------------------------------------------------*/
+.lets-talk-btn,
+.lets-talk-btn:hover {
+  color: var(--text-secondary-color);
+}
+
+/*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+.banner-section {
+  background-image: url(../img/v1/wellcome-overlay.png);
+}
+
+/*--------------------------------------------------------------
+# Clint Logo Section
+--------------------------------------------------------------*/
+
+.clint-logo {
+  background-image: none;
+}
+
+/*--------------------------------------------------------------
+# About Us Secton
+--------------------------------------------------------------*/
+.exercise-text h2 {
+  color: var(--tertiary-color);
+}
+
+.span-with-icon {
+  color: var(--tertiary-color);
+}
+
+.span-with-icon::after {
+  content: url(../img/v1/span-icon.png);
+}
+
+.about-us-list p::before {
+  content: url(../img/v1/about-us-list-icon.png);
+}
+
+/*--------------------------------------------------------------
+#  Expert Areas Section
+--------------------------------------------------------------*/
+.expert-areas {
+  background-position: left top 0px, right bottom 0px;
+}
+
+.area-img {
+  background-image: none;
+}
+
+.area-box {
+  border-color: var(--secondary-gray);
+}
+
+.area-box:hover {
+  background-color: var(--tertiary-color);
+}
+
+.area-box:hover .area-img {
+  background-image: none;
+}
+
+.area-box:hover .area-img::before {
+  background: var(--primary-color);
+}
+
+.area-box:hover .area-icon {
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--text-secondary-color);
+}
+
+.area-box:hover h4,
+.area-box:hover p {
+  color: var(--text-secondary-color);
+}
+
+.expert-slider-inner .swiper-button-next,
+.expert-slider-inner .swiper-button-prev {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*--------------------------------------------------------------
+#  Project Section
+--------------------------------------------------------------*/
+.tab-content p::before,
+.tab-content p::after {
+  background-image: url(../img/v1/Line.png);
+}
+
+/*--------------------------------------------------------------
+#  Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonial {
+  background-image: url(../img/v1/testimonial-bg-1.png), url(../img/v1/testimonial-bg-2.png);
+  background-position: left top, right bottom;
+  background-size: contain;
+}
+
+/*--------------------------------------------------------------
+#  Blog
+--------------------------------------------------------------*/
+.blog-div:hover .blog-box-content h4 {
+  color: var(--text-secondary-color);
+}
+
+.blog-div:hover .blog-box-content span {
+  color: var(--text-secondary-color);
+}
+
+.blog-box-content {
+  border-color: var(--secondary-gray);
+}
+
+/*--------------------------------------------------------------
+#  Contact Us 
+--------------------------------------------------------------*/
+.contact-us {
+  background-color: var(--tertiary-gray);
+  -webkit-box-shadow: 0px 5px 40px 0px rgba(23, 10, 36, 0.03), 5px 0px 40px 0px rgba(23, 10, 36, 0.03), -5px 0px 40px 0px rgba(23, 10, 36, 0.03), 0px -5px 40px 0px rgba(23, 10, 36, 0.03);
+  box-shadow: 0px 5px 40px 0px rgba(23, 10, 36, 0.03), 5px 0px 40px 0px rgba(23, 10, 36, 0.03), -5px 0px 40px 0px rgba(23, 10, 36, 0.03), 0px -5px 40px 0px rgba(23, 10, 36, 0.03);
+  background-image: none;
+  background-position: left bottom -100px, right top -180px;
+  background-repeat: no-repeat;
+}
+
+.contact-form {
+  border: none;
+  background-color: var(--tertiary-color);
+}
+
+.contact-form h4 {
+  color: var(--text-secondary-color);
+}
+
+.contact-form label {
+  color: var(--text-secondary-color);
+  opacity: 0.5;
+}
+
+.contact-form .form-control {
+  border-color: var(--primary-color);
+  color: var(--text-secondary-color);
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+  color: var(--secondary-gray)
+}
+
+.contact-form .form-control::-moz-placeholder {
+  color: var(--secondary-gray)
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: var(--secondary-gray)
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: var(--secondary-gray)
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--secondary-gray)
+}
+
+.contact-form .form-control:focus::-webkit-input-placeholder {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+.contact-form .form-control:focus::-moz-placeholder {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+.contact-form .form-control:focus:-ms-input-placeholder {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+.contact-form .form-control:focus::-ms-input-placeholder {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-control:focus::placeholder {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+.btn-submit {
+  border-color: var(--primary-color);
+  color: var(--text-secondary-color);
+}
+
+.btn-submit:hover {
+  color: var(--text-secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/*--------------------------------------------------------------
+#   Footer
+--------------------------------------------------------------*/
+.get-in-touch-content h2 {
+  color: var(--text-secondary-color);
+}
+
+.get-in-touch-content .secondary-custom-button {
+  color: var(--text-secondary-color);
+  border-color: var(--primary-color);
+}
+
+.get-in-touch-content .secondary-custom-button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
